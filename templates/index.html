@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIABETES PREDICTION</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel='icon' href="{{url_for('static',filename='favicon1.ico')}}" type='image/x-icon'/ >    
+
+
+
+</head>
+<body>
+    <div class="head">
+<h1>DIABETES PREDICTION</h1>
+    </div><hr><br>
+    <div class="para">
+     <p>Diabetes Mellitus is among critical diseases and lots of people are suffering from this disease. Age, obesity, lack of exercise, hereditary diabetes, living style, bad diet, high blood pressure, etc. can cause Diabetes Mellitus. People having diabetes have high risk of diseases like heart disease, kidney disease, stroke, eye problem, nerve damage, etc. Current practice in hospital is to collect required information for diabetes diagnosis through various tests and appropriate treatment is provided based on diagnosis. Big Data Analytics plays an significant role in healthcare industries.</p><br>
+     <P>Healthcare industries have large volume databases. Using big data analytics one can study huge datasets and find hidden information, hidden patterns to discover knowledge from the data and predict outcomes accordingly. In existing method, the classification and prediction accuracy is not so high. In this paper, we have proposed a diabetes prediction model for better classification of diabetes which includes few external factors responsible for diabetes along with regular factors like Glucose, BMI, Age, Insulin, etc. Classification accuracy is boosted with new dataset compared to existing dataset. Further with imposed a pipeline model for diabetes prediction intended towards improving the accuracy of classification.</p>
+    </div><br>
+    
+    <div class="cont">
+       <div class="line"><h2>ENTER DETAILS TO PREDICT</h2><br></div><br>
+        <form action="/predict" method="POST" class="sri">
+         <label for="preg">	Pregnancies:</label><br><br>
+         <input type="number"  name="preg" id="preg" placeholder="ENTER NO OF PREGNANCIES" required><br><br>
+         <label for="gluc">	Glucose:</label><br><br>
+         <input type="number" name="gluc"  id="gluc" placeholder="ENTER GLUCOSE LEVEL" required><br><br>
+         <label for="bp">BloodPressure:</label><br><br>
+         <input type="number"   name="bp" id="bp" placeholder="ENTER BP LEVEL" required><br><br>
+         <label for="sk">SkinThickness:</label><br><br>
+         <input type="number"  name="sk" id="sk" placeholder="ENTER SKIN THICKNESS" required><br><br>
+         <label for="ins">Insulin:</label><br><br>
+         <input type="number"   name="ins" id="ins" placeholder="ENTER INSULIN LEVEL" required><br><br>
+         <label for="bmi">BMI:</label><br><br>
+         <input type="number"  step="any" name="bmi" id="bmi" placeholder="ENTER BMI" required><br><br>
+         <label for="dpf">DiabetesPedigreeFunction:</label><br><br>
+         <input type="number"  step="any" name="dpf" id="dpf" placeholder="ENTER DIABETESPEDIGREEFUNCTION" required><br><br>
+         <label for="age">AGE:</label><br><br>
+         <input type="number" ID="age" name="age" required placeholder="ENTER AGE" min="18" ><br><br>
+         <input type="submit" value="PREDICT">    
+        </form><br><br>
+       </div>
+    
+    <div class="foot">
+        <h1>THANK YOU</h1>
+        <h1>&copy; 2022 MADE WITH &hearts;</h1>
+        <h1>ALL RIGHTS RESERVED</h1>
+
+    </div><br><br><br><hr><hr>
+</body>
+</html>
